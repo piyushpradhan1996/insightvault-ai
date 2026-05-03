@@ -41,6 +41,10 @@ app = FastAPI(
     title="InsightVault AI",
     description="RAG-based knowledge intelligence API with citations, structured insights, guardrails, and evals.",
     version="0.1.0",
+    contact={
+        "name": "piyushpradhan1996",
+        "url": "https://github.com/piyushpradhan1996",
+    },
 )
 
 app.add_middleware(
@@ -246,4 +250,3 @@ def document_summary_markdown(document_id: int, db: Session = Depends(get_db)) -
 @app.post("/api/evals/run", response_model=EvalRunResponse)
 def run_evals(db: Session = Depends(get_db)) -> EvalRunResponse:
     return EvalService(db).run_all()
-

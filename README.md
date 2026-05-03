@@ -1,5 +1,7 @@
 # InsightVault AI: RAG-Based Knowledge Intelligence API
 
+**Author:** [https://github.com/piyushpradhan1996](https://github.com/piyushpradhan1996)
+
 InsightVault AI is a backend-first LLM engineering portfolio project for ingesting documents, indexing knowledge, answering questions with source citations, extracting structured insights, and evaluating RAG behavior with repeatable test datasets.
 
 The goal is not to build another chatbot. This project demonstrates the backend architecture behind a production-oriented RAG service: ingestion workflows, chunk metadata, local retrieval, provider abstraction, prompt templates, structured outputs, guardrails, async jobs, evals, API contracts, and CI-tested regression behavior.
