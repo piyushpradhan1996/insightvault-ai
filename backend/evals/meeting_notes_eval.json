@@ -1,0 +1,23 @@
+{
+  "name": "Meeting Notes Insight Eval",
+  "documents": [
+    {
+      "title": "Checkout Migration Meeting",
+      "source_type": "meeting_notes",
+      "content": "Decision: the team agreed to migrate checkout validation to the new payment gateway in phase two. Action: Priya must prepare rollback steps by Friday. Risk: delayed gateway certification may block launch readiness. Follow up with compliance before production release."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Who owns rollback steps and when are they due?",
+      "expected_answer_contains": ["Priya", "Friday"],
+      "expected_citation_required": true
+    },
+    {
+      "question": "What risk may block launch readiness?",
+      "expected_answer_contains": ["gateway certification"],
+      "expected_citation_required": true
+    }
+  ]
+}
+

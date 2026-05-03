@@ -1,0 +1,23 @@
+{
+  "name": "API Documentation QA Eval",
+  "documents": [
+    {
+      "title": "Orders API Notes",
+      "source_type": "api_doc",
+      "content": "POST /api/orders creates an order and requires customer_id, sku, quantity, and payment_token. GET /api/orders/{id} returns order status, submitted_at, and fulfillment_state. Invalid payment_token returns HTTP 402 with error code PAYMENT_REQUIRED."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Which fields are required to create an order?",
+      "expected_answer_contains": ["customer_id", "payment_token"],
+      "expected_citation_required": true
+    },
+    {
+      "question": "What happens when payment token is invalid?",
+      "expected_answer_contains": ["402", "PAYMENT_REQUIRED"],
+      "expected_citation_required": true
+    }
+  ]
+}
+

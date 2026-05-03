@@ -1,0 +1,2 @@
+"""InsightVault AI backend package."""
+

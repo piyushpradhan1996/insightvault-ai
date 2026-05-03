@@ -1,0 +1,23 @@
+{
+  "name": "Incident Report QA Eval",
+  "documents": [
+    {
+      "title": "Search Outage Incident Report",
+      "source_type": "report",
+      "content": "On April 14, search latency increased after the index refresh job exhausted database connections. The mitigation was to pause refresh jobs and increase the connection pool. Risk: recurring connection leaks could affect checkout search suggestions. Action: platform team must add connection pool alerts before the next release."
+    }
+  ],
+  "questions": [
+    {
+      "question": "What caused search latency?",
+      "expected_answer_contains": ["database connections"],
+      "expected_citation_required": true
+    },
+    {
+      "question": "What mitigation was used?",
+      "expected_answer_contains": ["pause refresh jobs"],
+      "expected_citation_required": true
+    }
+  ]
+}
+

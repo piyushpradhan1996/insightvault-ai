@@ -1,0 +1,23 @@
+{
+  "name": "Refund Policy QA Eval",
+  "documents": [
+    {
+      "title": "Refund Policy",
+      "source_type": "policy",
+      "content": "Customers can request a refund within 30 days of purchase. Refunds are not available for final sale items or accounts closed for policy abuse. Support must respond to refund requests within two business days. Approved refunds are returned to the original payment method."
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the refund window?",
+      "expected_answer_contains": ["30 days"],
+      "expected_citation_required": true
+    },
+    {
+      "question": "Are final sale items refundable?",
+      "expected_answer_contains": ["final sale"],
+      "expected_citation_required": true
+    }
+  ]
+}
+
